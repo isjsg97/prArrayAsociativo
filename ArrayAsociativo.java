@@ -44,11 +44,23 @@ public class ArrayAsociativo {
 	}
 	
 	public String get(String c){
+		String res = "";
 		if(numnodos == 0){
 			throw new NoSuchElementException();
+		}else{
+			Nodo nodo = primero;
+			while(nodo != null){
+				if(nodo.clave.equals(c)){
+					res = nodo.valor;
+					break;
+				}
+				nodo = nodo.sig;
+			}
+			
+			
 		}
 		
-		return "";
+		return res;
 	}
 	
 }

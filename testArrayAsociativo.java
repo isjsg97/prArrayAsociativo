@@ -40,7 +40,7 @@ public class testArrayAsociativo {
 	}
 	@Test
 	public void BuscarClaveArrayConClave(){
-		assertEquals("Epaña", arraynovacio.get("pais"));
+		assertEquals("España", arraynovacio.get("pais"));//En versión anterior estaba mal escrito España
 	}
 
 }
