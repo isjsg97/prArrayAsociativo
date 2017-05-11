@@ -103,8 +103,15 @@ public class ArrayAsociativo {
 		return res;
 	}
 	
-	boolean containsKey(String clave){
-		return false;
+	boolean containsKey(String c){
+		boolean res = true;
+		
+		try{
+			get(c);
+		}catch(NoSuchElementException e){
+			res = false;
+		}
+		return res;
 	}
 	
 }
