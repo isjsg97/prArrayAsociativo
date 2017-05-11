@@ -38,5 +38,9 @@ public class testArrayAsociativo {
 	public void BuscarClaveArrayVacio(){
 		assertEquals("Epaña", arrayvacio.get("pais"));
 	}
+	@Test
+	public void BuscarClaveArrayConClave(){
+		assertEquals("Epaña", arraynovacio.get("pais"));
+	}
 
 }
