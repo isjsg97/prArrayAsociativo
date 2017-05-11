@@ -34,4 +34,9 @@ public class ArrayAsociativo {
 	}
 	
 	//Métodos de instancia
+
+	public int size(){
+		return 0;
+	}
+	
 }
