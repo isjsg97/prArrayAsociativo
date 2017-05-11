@@ -115,7 +115,8 @@ public class ArrayAsociativo {
 	}
 	
 	public boolean remove(String c){
-		return false;
+		boolean res = true;
+		return res;
 	}
 	
 }
