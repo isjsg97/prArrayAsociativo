@@ -66,5 +66,14 @@ public class testArrayAsociativo {
 		ar = null;
 	}
 	
+	@Test
+	public void InsertarEnArrayClave(){
+		ArrayAsociativo ar = new ArrayAsociativo(claves, valores);
+		ar.put("nombre", "juan");
+		assertEquals("juan", ar.get("nombre"));
+		assertEquals(new Integer(4), new Integer(ar.size()));
+		ar = null;
+	}
+	
 
 }
