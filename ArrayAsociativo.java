@@ -42,4 +42,8 @@ public class ArrayAsociativo {
 		return numnodos;
 	}
 	
+	public String get(String c){
+		return "";
+	}
+	
 }

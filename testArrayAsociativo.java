@@ -2,6 +2,8 @@
 
 import static org.junit.Assert.*;
 
+import java.util.*;
+
 import org.junit.*;
 public class testArrayAsociativo {
 
@@ -30,6 +32,11 @@ public class testArrayAsociativo {
 	@Test
 	public void TamañoEnArrayNoVacio() {
 		assertEquals(new Integer(4), new Integer(arraynovacio.size()));
+	}
+	
+	@Test(expected= NoSuchElementException.class)
+	public void BuscarClaveArrayVacio(){
+		assertEquals("Epaña", arrayvacio.get("pais"));
 	}
 
 }
