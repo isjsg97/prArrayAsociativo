@@ -5,21 +5,31 @@ import static org.junit.Assert.*;
 import org.junit.*;
 public class testArrayAsociativo {
 
-	ArrayAsociativo array;
+	ArrayAsociativo arrayvacio;
+	ArrayAsociativo arraynovacio;
+	String[] claves = new String[]{"nombre", "apellido", "dni", "pais"};
+	String[] valores = new String[]{"luis", "martin", "123456P", "España"};
 	
 	@Before
 	public void Iniciar(){
-		array = new ArrayAsociativo();
+		arrayvacio = new ArrayAsociativo();
+		arraynovacio = new ArrayAsociativo(claves, valores);
 	}
 	
 	@After
 	public void Acabar(){
-		array = null;
+		arrayvacio = null;
+		arraynovacio = null;
 	}
 	
 	@Test
 	public void TamañoEnArrayVacio() {
-		assertEquals(new Integer(0), new Integer(array.size()));
+		assertEquals(new Integer(0), new Integer(arrayvacio.size()));
+	}
+	
+	@Test
+	public void TamañoEnArrayNoVacio() {
+		assertEquals(new Integer(4), new Integer(arraynovacio.size()));
 	}
 
 }
