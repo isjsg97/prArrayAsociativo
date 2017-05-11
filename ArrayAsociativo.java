@@ -57,6 +57,9 @@ public class ArrayAsociativo {
 				nodo = nodo.sig;
 			}
 			
+			if(nodo == null){
+				throw new NoSuchElementException();
+			}
 			
 		}
 		
