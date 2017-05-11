@@ -16,6 +16,7 @@ public class ArrayAsociativo {
 	//Variables de instancia
 	private Nodo primero;
 	
+	private int numnodos;
 	
 	//Constructores
 	public ArrayAsociativo(){
@@ -26,9 +27,11 @@ public class ArrayAsociativo {
 		this();
 		if (claves.length > 0){
 			primero = new Nodo(claves[0], valores[0],null);
+			numnodos++;
 			for (int i = 1; i< claves.length; i++){
 				Nodo nuevo = new Nodo(claves[i], valores[i],primero);
 				primero = nuevo;
+				numnodos++;
 			}
 		}
 	}
@@ -36,7 +39,7 @@ public class ArrayAsociativo {
 	//Métodos de instancia
 
 	public int size(){
-		return 0;
+		return numnodos;
 	}
 	
 }
