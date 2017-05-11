@@ -27,12 +27,8 @@ public class ArrayAsociativo {
 	public ArrayAsociativo(String[] claves, String[] valores){
 		this();
 		if (claves.length > 0){
-			primero = new Nodo(claves[0], valores[0],null);
-			numnodos++;
-			for (int i = 1; i< claves.length; i++){
-				Nodo nuevo = new Nodo(claves[i], valores[i],primero);
-				primero = nuevo;
-				numnodos++;
+			for (int i = 0; i< claves.length; i++){	
+				put(claves[i], valores[i]);
 			}
 		}
 	}
