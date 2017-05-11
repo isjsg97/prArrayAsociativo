@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class ArrayAsociativo {
 	//Clases internas
@@ -43,6 +44,10 @@ public class ArrayAsociativo {
 	}
 	
 	public String get(String c){
+		if(numnodos == 0){
+			throw new NoSuchElementException();
+		}
+		
 		return "";
 	}
 	
