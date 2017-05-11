@@ -75,5 +75,10 @@ public class testArrayAsociativo {
 		ar = null;
 	}
 	
+	@Test
+	public void BuscarEnArrayVacio(){
+		assertEquals("20", arrayvacio.getOrElse("nombre", "20"));
+	}
+	
 
 }

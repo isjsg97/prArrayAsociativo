@@ -95,4 +95,9 @@ public class ArrayAsociativo {
 		}
 	}
 	
+	public String getOrElse(String c, String vpd){
+		
+		return "";
+	}
+	
 }
