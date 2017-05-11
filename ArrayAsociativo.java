@@ -68,7 +68,9 @@ public class ArrayAsociativo {
 	
 	
 	public void put(String c, String v){
-		
+		Nodo nodo = new Nodo(c,v,primero);
+		primero = nodo;
+		numnodos++;
 	}
 	
 }
