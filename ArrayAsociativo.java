@@ -68,9 +68,31 @@ public class ArrayAsociativo {
 	
 	
 	public void put(String c, String v){
-		Nodo nodo = new Nodo(c,v,primero);
-		primero = nodo;
-		numnodos++;
+		
+		if(primero == null){
+			Nodo nodo = new Nodo(c, v, primero);
+			primero = nodo;
+			numnodos++;
+		}else{
+			Nodo nodoact = primero;
+			Nodo nodoant = null;
+		
+			while(nodoact != null){
+				if(nodoact.clave.equals(c)){
+					nodoact.valor = v;
+					break;
+				}
+				nodoant = nodoact;
+				nodoact = nodoact.sig;
+			}
+		
+			if(nodoact == null){
+				Nodo nodo = new Nodo(c, v, null);
+				nodoant.sig = nodo;
+				numnodos++;
+			}
+		
+		}
 	}
 	
 }
