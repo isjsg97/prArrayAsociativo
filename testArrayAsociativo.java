@@ -108,7 +108,14 @@ public class testArrayAsociativo {
 	
 	@Test
 	public void BorrarClaveArrayVacio(){
-		assertTrue(true == arraynovacio.remove("edad"));
+		assertTrue(true == arrayvacio.remove("edad"));//Antes estaba arraynovacioporerror
+	}
+	
+	@Test
+	public void BorrarClaveArrayConClave(){
+		assertTrue(true == arraynovacio.remove(claves[0]));
+		assertTrue(false == arraynovacio.containsKey(claves[0]));
+		assertEquals(new Integer(3), new Integer(arraynovacio.size()));
 	}
 
 }
