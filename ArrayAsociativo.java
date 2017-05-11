@@ -116,6 +116,29 @@ public class ArrayAsociativo {
 	
 	public boolean remove(String c){
 		boolean res = true;
+		if(primero != null){
+			Nodo act = primero;
+			Nodo ant = null;
+			
+			while(act != null){
+			
+				if(act.clave.equals(c)){
+					if(ant == null){
+						primero = null;
+					}else{
+						ant.sig = act.sig;
+					}
+					numnodos--;
+					break;
+					
+				}
+				
+				ant = act;
+				act = act.sig;
+			}
+			
+			
+		}
 		return res;
 	}
 	
