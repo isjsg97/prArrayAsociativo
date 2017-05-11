@@ -91,5 +91,10 @@ public class testArrayAsociativo {
 		assertEquals("20", ar.getOrElse("edad", "20"));
 		ar = null;
 	}
+	
+	@Test
+	public void ExisteClaveArrayVacio(){
+		assertTrue(false == arrayvacio.containsKey("edad"));
+	}
 
 }

@@ -103,4 +103,8 @@ public class ArrayAsociativo {
 		return res;
 	}
 	
+	boolean containsKey(String clave){
+		return false;
+	}
+	
 }
