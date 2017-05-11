@@ -84,6 +84,12 @@ public class testArrayAsociativo {
 	public void BuscarEnArrayConClave(){
 		assertEquals(valores[0], arraynovacio.getOrElse(claves[0], "alex"));
 	}
-	
+	@Test
+	public void BuscarEnArrayNoClave(){
+		ArrayAsociativo ar = new ArrayAsociativo();
+		ar.put("nombre", "juan");
+		assertEquals("20", ar.getOrElse("edad", "20"));
+		ar = null;
+	}
 
 }
