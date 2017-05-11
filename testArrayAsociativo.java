@@ -101,5 +101,9 @@ public class testArrayAsociativo {
 	public void ExisteClaveArrayConClave(){
 		assertTrue(true == arraynovacio.containsKey(claves[0]));
 	}
+	@Test
+	public void ExisteClaveArraySinClave(){
+		assertTrue(false == arraynovacio.containsKey("edad"));
+	}
 
 }
