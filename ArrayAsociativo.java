@@ -66,4 +66,9 @@ public class ArrayAsociativo {
 		return res;
 	}
 	
+	
+	public void put(String c, String v){
+		
+	}
+	
 }

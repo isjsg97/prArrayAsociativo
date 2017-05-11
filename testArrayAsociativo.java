@@ -48,5 +48,14 @@ public class testArrayAsociativo {
 		assertEquals("20", arraynovacio.get("edad"));
 	}
 	
+	@Test
+	public void InsertarEnArrayVacio(){
+		ArrayAsociativo ar = new ArrayAsociativo();
+		ar.put("edad", "20");
+		assertEquals("20", ar.get("edad"));
+		assertEquals(new Integer(1), new Integer(ar.size()));
+		ar = null;
+	}
+	
 
 }
