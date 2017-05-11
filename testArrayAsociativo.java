@@ -36,11 +36,11 @@ public class testArrayAsociativo {
 	
 	@Test(expected= NoSuchElementException.class)
 	public void BuscarClaveArrayVacio(){
-		assertEquals("Epaña", arrayvacio.get("pais"));
+		assertEquals(valores[3], arrayvacio.get(claves[3]));
 	}
 	@Test
 	public void BuscarClaveArrayConClave(){
-		assertEquals("España", arraynovacio.get("pais"));
+		assertEquals(valores[3], arraynovacio.get(claves[3]));
 	}
 	
 	@Test(expected= NoSuchElementException.class)
@@ -78,6 +78,11 @@ public class testArrayAsociativo {
 	@Test
 	public void BuscarEnArrayVacio(){
 		assertEquals("20", arrayvacio.getOrElse("nombre", "20"));
+	}
+	
+	@Test
+	public void BuscarEnArrayConClave(){
+		assertEquals(valores[0], arraynovacio.getOrElse(claves[0], "alex"));
 	}
 	
 
