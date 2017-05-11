@@ -115,7 +115,7 @@ public class ArrayAsociativo {
 	}
 	
 	public boolean remove(String c){
-		boolean res = true;
+		boolean res = false;
 		if(primero != null){
 			Nodo act = primero;
 			Nodo ant = null;
@@ -129,6 +129,7 @@ public class ArrayAsociativo {
 						ant.sig = act.sig;
 					}
 					numnodos--;
+					res = true;
 					break;
 					
 				}
