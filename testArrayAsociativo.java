@@ -121,11 +121,11 @@ public class testArrayAsociativo {
 		ar = null;
 	}
 	
-	/*@Test
+	@Test
 	public void BorrarClaveArraySinClave(){
 		assertTrue(false == arraynovacio.remove("edad"));
 		assertTrue(true == arraynovacio.containsKey("nombre"));
-		assertEquals(new Integer(0), new Integer(arraynovacio.size()));
-	}*/
+		assertEquals(new Integer(4), new Integer(arraynovacio.size()));
+	}
 
 }
