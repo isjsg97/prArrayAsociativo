@@ -98,6 +98,12 @@ public class ArrayAsociativo {
 	public String getOrElse(String c, String vpd){
 		String res = vpd;
 		
+		try{
+			res = get(c);
+		}catch(NoSuchElementException e){
+			
+		}
+		
 		return res;
 	}
 	
