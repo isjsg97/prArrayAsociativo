@@ -103,7 +103,7 @@ public class ArrayAsociativo {
 		return res;
 	}
 	
-	boolean containsKey(String c){
+	public boolean containsKey(String c){
 		boolean res = true;
 		
 		try{
@@ -112,6 +112,10 @@ public class ArrayAsociativo {
 			res = false;
 		}
 		return res;
+	}
+	
+	public boolean remove(String c){
+		return false;
 	}
 	
 }
